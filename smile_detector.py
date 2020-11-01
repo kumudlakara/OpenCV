@@ -19,7 +19,6 @@ def lip_right_corner(landmarks):
 		top_lip_pts.append(landmarks[i])
 	for i in range(60, 62):
 		top_lip_pts.append(landmarks[i])
-	#top_lip_pts = np.squeeze(np.asarray(top_lip_pts))
 	top_lip_mean = np.mean(top_lip_pts, axis = 0)
 	return top_lip_mean
 
@@ -29,7 +28,6 @@ def lip_left_corner(landmarks):
 		bottom_lip_pts.append(landmarks[i])
 	for i in range(65,66):
 		bottom_lip_pts.append(landmarks[i])
-	#bottom_lip_pts = np.squeeze(np.asarray(bottom_lip_pts))
 	bottom_lip_mean = np.mean(bottom_lip_pts, axis = 0)
 	return bottom_lip_mean 
 
