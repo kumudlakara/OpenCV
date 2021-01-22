@@ -46,6 +46,6 @@ def find_waldo(gray_template, gray_waldo):
 	plt.title("Where is Waldo?")
 	plt.show()
 
-image_template, gray_template = load_img('/home/kmd/openCV/images/WaldoBeach.jpeg')
-_, gray_waldo = load_waldo('/home/kmd/openCV-tutorials/images/waldo.jpeg', image_template)
+image_template, gray_template = load_img('WaldoBeach.jpeg')
+_, gray_waldo = load_waldo('waldo.jpeg', image_template)
 find_waldo(gray_template, gray_waldo)
